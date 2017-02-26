@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AnalogSea Signup page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="main-nav">
+      <a href="#"><img class="main-logo" src="./assets/logo.png" alt="AnalogSea logo"></a>
+    </nav>
+
+    <main>
+      <div class="form-container">
+        <form method="post" action="/signup/">
+          <h2>Sign Up</h2>
+          <div class="input-container">
+            <fieldset name="login-info">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="john@example.com" required>
+
+              <label for="password">Password</label>
+              <input id="password" type="password" name="password" placeholder="password" required>
+            </fieldset>
+          
+            <button class="btn-submit" type="submit">Sign up</button>
+            <div class="link">
+              <a href="/forgot_password/new">Forgot password?</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="log-in">
+        <span>Already have an account? <a href="/login">Log in</a></span>
+      </div>
+      
+    </main>
+  </body>
+</html>
